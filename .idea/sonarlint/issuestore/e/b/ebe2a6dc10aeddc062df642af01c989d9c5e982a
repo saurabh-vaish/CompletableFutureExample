@@ -1,0 +1,47 @@
+
+isquid:CommentedOutCodeLineS"<This block of commented-out lines of code should be removed.(ŠÌ×»8ıôšİı-
+_squid:S1854‘";Remove this useless assignment to local variable "future1".(åÅ›¯ùÿÿÿÿ8Øìªßı-
+V
+squid:S106)"9Replace this use of System.out or System.err by a logger.(®³º¯8ø Ùı-
+\
+squid:S106–"9Replace this use of System.out or System.err by a logger.(ı™øøÿÿÿÿ8Òú¸ßı-
+hsquid:CommentedOutCodeLineD"<This block of commented-out lines of code should be removed.(Ù½º8Øİšİı-
+¹%squid:RedundantThrowsDeclarationCheck="€Remove the declaration of thrown exception 'java.util.concurrent.ExecutionException', as it cannot be thrown from method's body.(Ô³ æ8Øìªßı-
+nsquid:CommentedOutCodeLineJ"<This block of commented-out lines of code should be removed.(ÆÑÁ«úÿÿÿÿ8ıôšİı-
+Psquid:S1481‘",Remove this unused "future1" local variable.(åÅ›¯ùÿÿÿÿ8Øìªßı-
+isquid:CommentedOutCodeLinea"<This block of commented-out lines of code should be removed.(×—†‹8äÊÔÚı-
+hsquid:CommentedOutCodeLined"<This block of commented-out lines of code should be removed.(ÔÇ±G8äÊÔÚı-
+hsquid:CommentedOutCodeLinew"<This block of commented-out lines of code should be removed.(ÔÇ±G8Ë™Ëİı-
+isquid:CommentedOutCodeLine†"<This block of commented-out lines of code should be removed.(¨•‡l8Øìªßı-
+osquid:CommentedOutCodeLineˆ"<This block of commented-out lines of code should be removed.(êÚÆ¢øÿÿÿÿ8Øìªßı-
+Psquid:S1481“",Remove this unused "future2" local variable.(‚Òòàşÿÿÿÿ8Øìªßı-
+Vsquid:S1854>"8Remove this useless assignment to local variable "demo".(äÛÁÒ8Ë™Ëİı-
+osquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ÅÿÔûÿÿÿÿ8Øìªßı-
+isquid:CommentedOutCodeLineM"<This block of commented-out lines of code should be removed.(â÷²‘8ıôšİı-
+hsquid:CommentedOutCodeLineP"<This block of commented-out lines of code should be removed.(ÔÇ±G8ıôšİı-
+isquid:CommentedOutCodeLinez"<This block of commented-out lines of code should be removed.(ŠÌ×»8Ë™Ëİı-
+osquid:CommentedOutCodeLine„"<This block of commented-out lines of code should be removed.(ÅÿÔûÿÿÿÿ8’ÔüŞı-
+isquid:CommentedOutCodeLine^"<This block of commented-out lines of code should be removed.(³Âºö8äÊÔÚı-
+isquid:CommentedOutCodeLineg"<This block of commented-out lines of code should be removed.(ŠÌ×»8äÊÔÚı-
+wsquid:S1602“"SRemove useless curly braces around statement and then remove useless return keyword(‚Òòàşÿÿÿÿ8ùÿüŞı-
+¯%squid:RedundantThrowsDeclarationCheck="wRemove the declaration of thrown exception 'java.lang.InterruptedException', as it cannot be thrown from method's body.(Ô³ æ8Øìªßı-
+nsquid:CommentedOutCodeLinep"<This block of commented-out lines of code should be removed.(ÙŸíµüÿÿÿÿ8Ë™Ëİı-
+isquid:CommentedOutCodeLines"<This block of commented-out lines of code should be removed.(Ï“ø8Ë™Ëİı-
+isquid:CommentedOutCodeLineZ"<This block of commented-out lines of code should be removed.(¬•µ8äÊÔÚı-
+Gsquid:S1481>")Remove this unused "demo" local variable.(äÛÁÒ8Ë™Ëİı-
+V
+squid:S106"9Replace this use of System.out or System.err by a logger.(¿úÏû8­†ëØı-
+wsquid:S1602‘"SRemove useless curly braces around statement and then remove useless return keyword(åÅ›¯ùÿÿÿÿ8øŸŒßı-
+isquid:CommentedOutCodeLineV"<This block of commented-out lines of code should be removed.(ˆÕ¹Ğ8ıôšİı-
+[
+squid:S106"9Replace this use of System.out or System.err by a logger.(›Ãÿ€úÿÿÿÿ8¶ÆòØı-
+nsquid:CommentedOutCodeLinel"<This block of commented-out lines of code should be removed.(ÎÀï¼úÿÿÿÿ8Ë™Ëİı-
+isquid:CommentedOutCodeLine€"<This block of commented-out lines of code should be removed.(¨•‡l8’ÔüŞı-
+Psquid:S1612‘",Replace this lambda with a method reference.(åÅ›¯ùÿÿÿÿ8âé«ßı-
+nsquid:CommentedOutCodeLineH"<This block of commented-out lines of code should be removed.(œ×çüÿÿÿÿ8ıôšİı-
+Ysquid:UnusedPrivateMethod"'Remove this unused private "d1" method.(Í„‘ıÿÿÿÿÿ8øŸŒßı-
+wsquid:S1602Ÿ"SRemove useless curly braces around statement and then remove useless return keyword(şÍ¥«ùÿÿÿÿ8˜Ü×Şı-
+isquid:S21422"FEither re-interrupt this method or rethrow the "InterruptedException".(è®ã¶øÿÿÿÿ8‹øÿØı-
+_squid:S1854“";Remove this useless assignment to local variable "future2".(‚Òòàşÿÿÿÿ8Øìªßı-
+U
+squid:S106 "9Replace this use of System.out or System.err by a logger.(¸ï©8ø Ùı-

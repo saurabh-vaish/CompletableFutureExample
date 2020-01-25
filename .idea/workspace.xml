@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0fff6d65-b4d6-489c-8052-3d5782ee2923" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+    <option name="PARALLEL_COMPILATION" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1Ws9zOcuP3Whx2rKAmRjjXlc9WL" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="CompletableFutureTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.CompletableFutureTest" />
+      <module name="AsynchronousInJava8" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.CompletableFutureTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0fff6d65-b4d6-489c-8052-3d5782ee2923" name="Default Changelist" comment="" />
+      <created>1579927696604</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1579927696604</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1874" height="345" key="GridCell.Tab.0.bottom" timestamp="1579942950724">
+      <screen x="0" y="25" width="1920" height="1055" />
+    </state>
+    <state width="1874" height="345" key="GridCell.Tab.0.bottom/0.25.1920.1055@0.25.1920.1055" timestamp="1579942950724" />
+    <state width="1874" height="345" key="GridCell.Tab.0.center" timestamp="1579942950723">
+      <screen x="0" y="25" width="1920" height="1055" />
+    </state>
+    <state width="1874" height="345" key="GridCell.Tab.0.center/0.25.1920.1055@0.25.1920.1055" timestamp="1579942950723" />
+    <state width="1874" height="345" key="GridCell.Tab.0.left" timestamp="1579942950722">
+      <screen x="0" y="25" width="1920" height="1055" />
+    </state>
+    <state width="1874" height="345" key="GridCell.Tab.0.left/0.25.1920.1055@0.25.1920.1055" timestamp="1579942950722" />
+    <state width="1874" height="345" key="GridCell.Tab.0.right" timestamp="1579942950723">
+      <screen x="0" y="25" width="1920" height="1055" />
+    </state>
+    <state width="1874" height="345" key="GridCell.Tab.0.right/0.25.1920.1055@0.25.1920.1055" timestamp="1579942950723" />
+    <state x="456" y="188" key="SettingsEditor" timestamp="1579927751397">
+      <screen x="0" y="25" width="1920" height="1055" />
+    </state>
+    <state x="456" y="188" key="SettingsEditor/0.25.1920.1055@0.25.1920.1055" timestamp="1579927751397" />
+    <state x="639" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1579927699228">
+      <screen x="0" y="25" width="1920" height="1055" />
+    </state>
+    <state x="639" y="380" key="com.intellij.ide.util.TipDialog/0.25.1920.1055@0.25.1920.1055" timestamp="1579927699228" />
+  </component>
+</project>

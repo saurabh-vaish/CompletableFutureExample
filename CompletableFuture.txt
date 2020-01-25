@@ -1,0 +1,77 @@
+CompletableFuture is used for asynchronous programming in Java,  means of writing non-blocking code by running a task on a separate thread than the main application thread and notifying the main thread about its progress, completion or failure.
+
+This way, your main thread does not block/wait for the completion of the task and it can execute other tasks in parallel.
+
+Introduced in java8 is extension of Future from java5
+
+CompletableFuture implements Future and CompletionStage interfaces and provides a huge set of convenience methods for creating, chaining and combining multiple Futures. It also has a very comprehensive exception handling support.
+
+Creation Of CompletableFuture :---
+
+1. By conntructor --    CompletableFuture<T> obj = new CompletableFuture<T>();
+
+2. By SupplyAsync() --  CompletableFuture.SupplyAsync(()-> return something);     // it is used when the called method or lambda is returning something
+
+3. By runAsync() --  CompletableFuture.SupplyAsync(()-> return something);     // it is used when the called method or lambda is returning something
+
+Difference between supplyAsync() and runAsync() methods ===
+
+Both methods are used to execute task asynchronously , the main difference is that runAsync() is used when called method is not returning anything and supplyAsync() is used when called method is returning something.
+
+Methods in CompletableFuture --- CompletableFuture api has static methods that can be used in method chaining
+
+1. get() --- This method is like subscribe , it subscribes the CompletableFuture after completion, to get the result , it blocks and waits for the Future to complete.
+
+2. thenApply() --- This method is used to process and transform the result of a CompletableFuture when it arrives. It takes a Function<T,R>  that accepts an argument of type T and produces a result of type R .
+
+                e.g. CompletableFuture<String> welcome = CompletableFuture.supplyAsync(()->return "saurabh").thenApply(name-> "hello" + name);
+                      System.out.println(welcome.get());
+
+2. thenAccept() & thenRun() ---If you don’t want to return anything from your callback function and just want to run some piece of code after the completion of the Future, then you can use thenAccept() and thenRun()
+                                methods. These methods are consumers and are often used as the last callback in the callback chain.
+                              The difference is that thenAccept() is having access the result but thenRun() is not having results.
+
+
+                e.g. CompletableFuture<String> welcome = CompletableFuture.supplyAsync(()->return "saurabh").thenAccept(name-> System.out.println("Hello" + name));
+
+                     CompletableFuture<String> welcome = CompletableFuture.supplyAsync(()->return "saurabh").thenRun(()-> System.out.println("Hello"));
+
+3. thenCompose() ====  this method is used to combine two dependent CompletableFuture and gives a nested result produced by both the futures.
+
+                    e.g.  CompletableFuture<String> future1 = CompletableFuture.supplyAsync(()-> {return "saurabh" ;} );
+
+                          private static CompletableFuture<String> d1(String s){ return CompletableFuture.supplyAsync(() -> { return s+" "+"vaish"; }); }
+
+                          CompletableFuture<String> total = future1.thenCompose(name->d1(name));
+
+                          System.out.println(total.get());
+
+4. thenCombine() ====  this method is used when you want two Futures to run independently and do something after both are complete.
+                        e.g.  CompletableFuture<String> future1 = CompletableFuture.supplyAsync(()-> {return "saurabh" ;} );
+
+                            CompletableFuture<String> future2 = CompletableFuture.supplyAsync(()-> {return "vaish" ;} );
+
+                            CompletableFuture<String> total = future1.thenCombine(future2,(future1result,future2result)-> future1result+" "+future2result );     // this method is used to combine two
+                            // independent CompletableFutures
+
+                            System.out.println(total.get());
+
+5. allOf()   ====  This method is used in scenarios when you have a List of independent futures that you want to run in parallel and do something after all of them are complete.
+
+5. anyOf()   ====  This method  returns a new CompletableFuture which is completed when any of the given CompletableFutures complete, with the same result.
+
+
+Exception handling ====== For handling exception in CompletableFuture we are having two methods .
+
+1. exceptionally() === This method callback gives  a chance to recover from errors generated from the original Future. You can log the exception here and return a default value.the error will not be propagated further
+                        in the callback chain if you handle it once.
+                      e.g.  CompletableFuture<String> future1 = CompletableFuture.supplyAsync(()-> {return "saurabh" ;} ).exceptionally(e->e.getMessage());
+
+2.  handle() ===== This method is used to recover from exceptions. It is called whether or not an exception occurs.
+                    e.g.  CompletableFuture<String> future2 = CompletableFuture.supplyAsync(()-> {return "vaish" ;} ).handle((res,ex)-> {
+                            if(ex!=null)
+                            {
+                                System.out.println(ex.getMessage());
+                            }
+                            return res;
+                        });
