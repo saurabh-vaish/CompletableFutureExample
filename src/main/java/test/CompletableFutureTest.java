@@ -10,7 +10,7 @@ import java.util.concurrent.*;
 
 class Demo{
 
-    private int count = 10;
+    private int count = 100;
     private int sleep = 100;
 
     public void m1()  {
@@ -65,86 +65,86 @@ public class CompletableFutureTest {
         // supplyAsync() === used when method is returning something
 
         // get() == used to get the results , we need to call this method on CompletableFutures. It is like subscribe().
-//        System.out.println("with thread pool stared ---> "+System.currentTimeMillis());
+        System.out.println("with thread pool stared ---> "+System.currentTimeMillis());
 
         // in this case one thread pool will be created with 4 threads and from this pool threads will be shared to everyone
 
-//        ExecutorService executorService = Executors.newFixedThreadPool(4);
-//
-//        CompletableFuture<Void> voidCompletableFuture1  = CompletableFuture.runAsync(() -> demo.m1(),executorService );
-//        CompletableFuture<Void> voidCompletableFuture2 =  CompletableFuture.runAsync(() -> demo.m2(),executorService);
-//
-//        CompletableFuture<Integer> integerCompletableFuture1 = CompletableFuture.supplyAsync(() -> demo.m3(),executorService);
-//        CompletableFuture<Integer> integerCompletableFuture2 =  CompletableFuture.supplyAsync(() -> demo.m4(),executorService);
-//
-//        voidCompletableFuture1.get();
-//        voidCompletableFuture2.get();
-//
-//        integerCompletableFuture1.get();
-//        integerCompletableFuture2.get();
-//
-//        executorService.shutdown();
-//
-//        System.out.println("with thread pool ended ---> "+System.currentTimeMillis());    // approx time taken in this case is 10060 ms
+        ExecutorService executorService = Executors.newFixedThreadPool(4);
 
-//        System.out.println("with thread pool independently stared ---> "+System.currentTimeMillis());
-//
-        // In this case 4 thread pool is being created and their single thread will execute task
+        CompletableFuture<Void> voidCompletableFuture1  = CompletableFuture.runAsync(() -> demo.m1(),executorService );
+        CompletableFuture<Void> voidCompletableFuture2 =  CompletableFuture.runAsync(() -> demo.m2(),executorService);
 
-//        CompletableFuture<Void> voidCompletableFuture1  = CompletableFuture.runAsync(() -> demo.m1(),Executors.newSingleThreadExecutor() );
-//        CompletableFuture<Void> voidCompletableFuture2 =  CompletableFuture.runAsync(() -> demo.m2(),Executors.newSingleThreadExecutor());
-//
-//        CompletableFuture<Integer> integerCompletableFuture1 = CompletableFuture.supplyAsync(() -> demo.m3(),Executors.newSingleThreadExecutor());
-//        CompletableFuture<Integer> integerCompletableFuture2 =  CompletableFuture.supplyAsync(() -> demo.m4(),Executors.newSingleThreadExecutor());
-//
-//        voidCompletableFuture1.get();
-//        voidCompletableFuture2.get();
-//
-//        integerCompletableFuture1.get();
-//        integerCompletableFuture2.get();
-//
-//        System.out.println("with thread pool ended ---> "+System.currentTimeMillis());    // approx time taken in this case is 10060 ms
+        CompletableFuture<Integer> integerCompletableFuture1 = CompletableFuture.supplyAsync(() -> demo.m3(),executorService);
+        CompletableFuture<Integer> integerCompletableFuture2 =  CompletableFuture.supplyAsync(() -> demo.m4(),executorService);
 
-//        System.out.println("without thread pool stared ---> "+System.currentTimeMillis());
-//
-        // In this case one common pool will gets created and from this pool 4 worker threads will gets executed
+        voidCompletableFuture1.get();
+        voidCompletableFuture2.get();
 
-//        CompletableFuture<Void> voidCompletableFuture1  = CompletableFuture.runAsync(() -> demo.m1());
-//        CompletableFuture<Void> voidCompletableFuture2 =  CompletableFuture.runAsync(() -> demo.m2());
-//
-//        CompletableFuture<Integer> integerCompletableFuture1 = CompletableFuture.supplyAsync(() -> demo.m3());
-//        CompletableFuture<Integer> integerCompletableFuture2 =  CompletableFuture.supplyAsync(() -> demo.m4());
-//
-//
-//        voidCompletableFuture1.get();
-//        voidCompletableFuture2.get();
-//
-//        integerCompletableFuture1.get();
-//        integerCompletableFuture2.get();
-//
-//        System.out.println("without thread pool ended ---> "+System.currentTimeMillis());   // approx time taken in this case is 10060 ms
+        integerCompletableFuture1.get();
+        integerCompletableFuture2.get();
+
+        executorService.shutdown();
+
+        System.out.println("with thread pool ended ---> "+System.currentTimeMillis());    // approx time taken in this case is 10060 ms
+
+        System.out.println("with thread pool independently stared ---> "+System.currentTimeMillis());
+
+//         In this case 4 thread pool is being created and their single thread will execute task
+
+        CompletableFuture<Void> voidCompletableFuture3  = CompletableFuture.runAsync(() -> demo.m1(),Executors.newSingleThreadExecutor() );
+        CompletableFuture<Void> voidCompletableFuture4 =  CompletableFuture.runAsync(() -> demo.m2(),Executors.newSingleThreadExecutor());
+
+        CompletableFuture<Integer> integerCompletableFuture5 = CompletableFuture.supplyAsync(() -> demo.m3(),Executors.newSingleThreadExecutor());
+        CompletableFuture<Integer> integerCompletableFuture6 =  CompletableFuture.supplyAsync(() -> demo.m4(),Executors.newSingleThreadExecutor());
+
+        voidCompletableFuture3.get();
+        voidCompletableFuture4.get();
+
+        integerCompletableFuture5.get();
+        integerCompletableFuture6.get();
+
+        System.out.println("with thread pool ended ---> "+System.currentTimeMillis());    // approx time taken in this case is 10060 ms
+
+        System.out.println("without thread pool stared ---> "+System.currentTimeMillis());
+
+//         In this case one common pool will gets created and from this pool 4 worker threads will gets executed
+
+        CompletableFuture<Void> voidCompletableFuture7  = CompletableFuture.runAsync(() -> demo.m1());
+        CompletableFuture<Void> voidCompletableFuture8 =  CompletableFuture.runAsync(() -> demo.m2());
+
+        CompletableFuture<Integer> integerCompletableFuture9 = CompletableFuture.supplyAsync(() -> demo.m3());
+        CompletableFuture<Integer> integerCompletableFuture10 =  CompletableFuture.supplyAsync(() -> demo.m4());
 
 
-//        CompletableFuture<String> future1 = CompletableFuture.supplyAsync(()-> {return "saurabh" ;} );
-//
-//        CompletableFuture<String> total = future1.thenCompose(name->d1(name));     // this method is used to combine two dependent CompletableFutures
-//
-//        System.out.println(total.get());
+        voidCompletableFuture7.get();
+        voidCompletableFuture8.get();
 
-//        CompletableFuture<String> future1 = CompletableFuture.supplyAsync(()-> {return "saurabh" ;} );
-//
-//        CompletableFuture<String> future2 = CompletableFuture.supplyAsync(()-> {return "vaish" ;} );
-//
-//        CompletableFuture<String> total = future1.thenCombine(future2,(future1result,future2result)-> future1result+" "+future2result );     // this method is used to combine two
-//        // independent CompletableFutures
-//
-//        System.out.println(total.get());
+        integerCompletableFuture9.get();
+        integerCompletableFuture10.get();
+
+        System.out.println("without thread pool ended ---> "+System.currentTimeMillis());   // approx time taken in this case is 10060 ms
+
+
+        CompletableFuture<String> future1 = CompletableFuture.supplyAsync(()-> {return "saurabh" ;} );
+
+        CompletableFuture<String> total = future1.thenCompose(name->d1(name));     // this method is used to combine two dependent CompletableFutures
+
+        System.out.println(total.get());
+
+        CompletableFuture<String> future2 = CompletableFuture.supplyAsync(()-> {return "saurabh" ;} );
+
+        CompletableFuture<String> future3 = CompletableFuture.supplyAsync(()-> {return "vaish" ;} );
+
+        CompletableFuture<String> total2 = future2.thenCombine(future3,(future1result,future2result)-> future1result+" "+future2result );     // this method is used to combine two
+        // independent CompletableFutures
+
+        System.out.println(total2.get());
 
         // handling exception
 
-        CompletableFuture<String> future1 = CompletableFuture.supplyAsync(()-> {return "saurabh" ;} ).exceptionally(e->e.getMessage());
+        CompletableFuture<String> future4 = CompletableFuture.supplyAsync(()-> {return "saurabh" ;} ).exceptionally(e->e.getMessage());
 
-        CompletableFuture<String> future2 = CompletableFuture.supplyAsync(()-> {return "vaish" ;} ).handle((res,ex)-> {                // will execute wheather exception came or not 
+        CompletableFuture<String> future5 = CompletableFuture.supplyAsync(()-> {return "vaish" ;} ).handle((res,ex)-> {                // will execute wheather exception came or not
             if(ex!=null)
             {
                 System.out.println(ex.getMessage());

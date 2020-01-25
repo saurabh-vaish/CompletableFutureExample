@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0fff6d65-b4d6-489c-8052-3d5782ee2923" name="Default Changelist" comment="" />
+    <list default="true" id="0fff6d65-b4d6-489c-8052-3d5782ee2923" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/AsynchronousInJava8.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test/CompletableFutureTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/CompletableFutureTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,6 +23,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -33,7 +41,8 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
   </component>
   <component name="RecentsManager">
@@ -95,9 +104,9 @@
       <screen x="0" y="25" width="1920" height="1055" />
     </state>
     <state x="456" y="188" key="SettingsEditor/0.25.1920.1055@0.25.1920.1055" timestamp="1579927751397" />
-    <state x="639" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1579927699228">
+    <state x="639" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1579943136966">
       <screen x="0" y="25" width="1920" height="1055" />
     </state>
-    <state x="639" y="380" key="com.intellij.ide.util.TipDialog/0.25.1920.1055@0.25.1920.1055" timestamp="1579927699228" />
+    <state x="639" y="380" key="com.intellij.ide.util.TipDialog/0.25.1920.1055@0.25.1920.1055" timestamp="1579943136966" />
   </component>
 </project>
